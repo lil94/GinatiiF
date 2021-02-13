@@ -1,0 +1,95 @@
+﻿<!doctype html>
+<html lang="he">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>גינתי</title>
+    <meta name="description" content="name of game" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="names" />
+
+    <!-- CSS -->
+
+    <link href="styles/myStyle.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Scripts -->
+    <!--jQuery library-->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+    <!--הקוד שמפעיל את תפריט הניווט-->
+    <script src="jScripts/myScript.js"></script>
+
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <!--קישור לדף עצמו כדי להתחיל את המשחק מחדש בלחיצה על הלוגו-->
+            <a href="indextest.html"id="noline">
+                <!--הלוגו של המשחק שלכם-->
+
+                <img id="logo" src="Images/LOGO.png" />
+                <p id="name">גינתי </p>
+            </a>
+            <!--תפריט הניווט בראש העמוד-->
+            <nav>
+                <ul>
+                    <li><a class="about">אודות</a></li>
+                    <li><a class="howToPlay">איך משחקים?</a></li>
+                    <li><a class="credits">קרדיטים</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="aboutDiv" class="popUp bounceInDown hide">
+            <a class="closeAbout">X</a>
+            <p>
+                <a href="https://www.hit.ac.il/">
+                    <img src="Images/hit.jpg" id="hitImg" width="120" height="100" />
+                </a>
+                <a id="hiText" href="https://www.hit.ac.il/telem/overview">הפקולטה לטכנולוגיות למידה </a>
+                <img src="Images/odot.png" width="700" hight="800" />
+            </p>
+        </div>
+
+        <div id="howToPlayDiv" class="popUp bounceInDown hide">
+            <a class="closeHowToPlay">X</a>
+            <p>
+
+                <img src="Images/howToPlay.png" width="700" hight="800" id="howToPlayImage" />
+                <!--
+                        <h1>איך משחקים</h1> <br /><br />
+                        השקו את העציץ עם התשובה הנכונה באמצעות <strong>גרירת המזלף ע"י העכבר  </strong> <br />
+                            ומיקומו מעל התשובה הנבחרת.
+                            <br /> <br />
+
+                            לחצו <strong>"בדיקה"</strong> על מנת לאשר את הבחירה ובדיקתה. <br /> <br /> <br />
+                                                                                                       <strong>ענו נכונה על 10 שאלות</strong>
+
+                            בכדי לשתול את הצמחים בגינה
+                          של נתי ולהשלים את המשחק.
+            -->
+
+            </p>
+        </div>
+        <div id="creditDiv" class="popUp bounceInDown hide">
+            <a class="closeCredits">X</a>
+        <p>
+
+
+            <div id="crediText">
+                <a> לקוחים מאתר </a> <a href="https://www.freepik.com/">Freepik.com</a>
+            </div>
+            <img src="Images/credit.png" width="700" hight="800" />
+
+        </p>
+    </div>
+        <div id="gameArea" class="">
+            <!--src = הקישור של דף המשחק שלכם (לא קובץ האנימייט)-->
+
+            <iframe id="gameIframe" src="ginati/ginati.html" frameBorder="0" allowfullscreen="">Browser not compatible.</iframe>
+        </div>
+    </div>
+</body>
+
+</html>

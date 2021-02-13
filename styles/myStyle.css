@@ -1,0 +1,228 @@
+﻿body {
+    background-color: #78DFEA;
+    /*background-color: white;*/
+    /* background-color: #ffd7ba;*/
+    font-family: 'Rubik', sans-serif;
+}
+
+iframe {
+    border: 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+#gameArea {
+    overflow: hidden;
+    position: relative;
+    height: 80vh;
+    width: 90vw;
+    margin: 0 auto;
+}
+
+.hide {
+    display: none;
+}
+
+header {
+    background-color: rgb(35, 121, 128);
+    width: 100%;
+    height: 53px;
+    position: relative;
+    direction: rtl;
+    display: block;
+    direction: rtl;
+    z-index: 3;
+    font-family: 'Rubik', sans-serif;
+}
+
+    /*כותרת משחק*/
+    header > a > p {
+        font-size: 19pt;
+        /* font-weight: bold; */
+        position: relative;
+        top: -13px;
+        color: #f7f7f7;
+        display: inline-block;
+        direction: rtl;
+    }
+
+/*לוגו*/
+#logo {
+    width: 75px;
+    height: 39px;
+    padding: 5px 15px;
+    direction: rtl;
+    font-family: 'Rubik', sans-serif;
+}
+
+nav {
+    margin-top: -70px;
+    margin-left: 10px;
+    direction: rtl;
+}
+
+    nav ul {
+        list-style: none;
+        direction: rtl;
+    }
+
+        nav ul li {
+            display: inline-block;
+            float: left;
+            direction: rtl;
+        }
+
+            nav ul li a {
+                display: block;
+                color: whitesmoke;
+                text-align: right;
+                padding: 3px 10px;
+                font-weight: 400;
+                font-size: 12pt;
+                font-family: 'Rubik', sans-serif;
+                direction: rtl;
+                text-decoration: none;
+            }
+
+                nav ul li a:hover {
+                    font-weight: 600;
+                    cursor: pointer;
+                    font-family: 'Rubik', sans-serif;
+                    direction: rtl;
+                    text-decoration: none;
+                }
+
+.popUp img {
+    opacity: 1;
+   
+}
+.popUp {
+    background-color: #e8dfdfd4;
+    /*  opacity: 0.7; */
+    width: 400px;
+    position: fixed;
+    top: 60px;
+    z-index: 4;
+    text-align: right;
+    width: 700px;
+    border-radius: 25px;
+    padding: 10px;
+    padding-bottom: 25px;
+    right: 0;
+    left: 0;
+    margin-right: auto;
+    margin-left: auto;
+    direction: rtl;
+    border: 1px solid black;
+}
+
+.bounceInDown {
+    -webkit-animation-name: bounceInDown;
+    animation-name: bounceInDown;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes bounceInDown {
+    0%, 60%, 75%, 90%, 100% {
+        -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+        transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -3000px, 0);
+        transform: translate3d(0, -3000px, 0);
+    }
+
+    60% {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 25px, 0);
+        transform: translate3d(0, 25px, 0);
+    }
+
+    75% {
+        -webkit-transform: translate3d(0, -10px, 0);
+        transform: translate3d(0, -10px, 0);
+    }
+
+    90% {
+        -webkit-transform: translate3d(0, 5px, 0);
+        transform: translate3d(0, 5px, 0);
+    }
+
+    100% {
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@keyframes bounceInDown {
+    0%, 60%, 75%, 90%, 100% {
+        -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+        transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -3000px, 0);
+        transform: translate3d(0, -3000px, 0);
+    }
+
+    60% {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 25px, 0);
+        transform: translate3d(0, 25px, 0);
+    }
+
+    75% {
+        -webkit-transform: translate3d(0, -10px, 0);
+        transform: translate3d(0, -10px, 0);
+    }
+
+    90% {
+        -webkit-transform: translate3d(0, 5px, 0);
+        transform: translate3d(0, 5px, 0);
+    }
+
+    100% {
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+#crediText {
+    position: absolute;
+    
+    padding-right: 221px;
+    font-size: 26px;
+    padding-top: 225px;
+    color: #484a4e;
+}
+
+#hiText {
+    position: absolute;
+    padding-right: 249px;
+    padding-top: 384px;
+    color: #9a6b2f;
+}
+
+
+#hitImg {
+    position: absolute;
+    padding-right: 280px;
+    padding-top: 282px;
+}
+#name {
+    font-family: 'Rubik', sans-serif;
+}
+div > a {
+    cursor: pointer;
+}
+#noline {
+    text-decoration: none;
+}
